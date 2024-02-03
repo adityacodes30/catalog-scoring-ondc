@@ -5,5 +5,5 @@
 <li>Aditya Sapra </li>
 <li>Shaurya </li>
 <li>Payal</li>
-<li>Krishna Vij </li>
+<li>Krishna Vig </li>
 <ul> 
