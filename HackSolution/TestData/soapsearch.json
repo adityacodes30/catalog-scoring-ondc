@@ -1,0 +1,56 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "transaction_id": "f6312a05-d002-4ff3-a77f-4644a78979a5",
+        "message_id": "1f49b548-b0f7-471b-a4bc-190d9ec3a3e0",
+        "timestamp": "2024-02-03T13:05:34.821Z",
+        "ttl": "PT30S"
+    },
+    "searchRequest": {
+        "context": {
+            "domain": "nic2004:52110",
+            "country": "IND",
+            "city": "std:080",
+            "action": "search",
+            "core_version": "1.1.0",
+            "bap_id": "buyer-app-preprod.ondc.org",
+            "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+            "transaction_id": "f6312a05-d002-4ff3-a77f-4644a78979a5",
+            "message_id": "1f49b548-b0f7-471b-a4bc-190d9ec3a3e0",
+            "timestamp": "2024-02-03T13:05:34.821Z",
+            "ttl": "PT30S"
+        },
+        "message": {
+            "intent": {
+                "item": {
+                    "descriptor": {
+                        "name": "soap"
+                    }
+                },
+                "fulfillment": {
+                    "type": "Delivery",
+                    "end": {
+                        "location": {
+                            "gps": "30.454735,76.438291"
+                        }
+                    }
+                },
+                "payment": {
+                    "@ondc/org/buyer_app_finder_fee_type": "percent",
+                    "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+                }
+            }
+        }
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}

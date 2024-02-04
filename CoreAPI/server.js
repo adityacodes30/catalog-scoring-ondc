@@ -14,4 +14,4 @@ app.get('/catalog', (req, res) => {
     res.json({ message: "test" });
 })
 
-
+export default app;

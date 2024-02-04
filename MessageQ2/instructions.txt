@@ -1,0 +1,9 @@
+
+// build
+
+docker build -t messageq2 .
+
+
+// run conatiner 
+
+docker run -d --hostname raabitq2 --name rabbit-server-q2 -p 9091:15672 -p 9090:5672 messageq2

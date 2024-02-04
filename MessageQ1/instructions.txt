@@ -1,0 +1,9 @@
+
+// build
+
+docker build -t messageq1 .
+
+
+// run conatiner 
+
+docker run -d --hostname raabitq1 --name rabbit-server-q1 -p 8081:15672 -p 8080:5672 messageq1
