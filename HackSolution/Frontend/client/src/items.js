@@ -1,13 +1,13 @@
 const catalogItems = [
-    'Search about Tea',
-    'Search about Bread',
-    'Search about Soap',
-    'Search about Rice',
-    'Search about Deodrants',
-    'Search about Shampoo',
-    'Search about Conditioner',
-    'Search about Toothpaste',
-    'Search about Toothbrush',
+    'search_tea',
+    'search_bread',
+    'search_soap',
+    'search_rice',
+    'search_deodrants',
+    'search_shampoo',
+    'search_conditioner',
+    'search_toothpaste',
+    'search_toothbrush',
   ];
   
   export default catalogItems;

@@ -116,8 +116,11 @@ body
   border-radius: 5px;
   cursor: pointer;
 }
+.catalog-button.selected
+{
+  border: 2px solid black ;
+}
 
 .catalog-button:hover {
   background-color: #2f5bb7;
 }
-
