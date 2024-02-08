@@ -4,14 +4,20 @@ const app = express();
 
 app.use(express.json());
 
+app.use('/catalog', catalogRouter);
+
 app.get('/', (req, res) => {
     res.status(200);
-    res.json({ message: "hello" });
+    res.json({ message: "system operational" });
 })
 
-app.get('/catalog', (req, res) => {
-    res.status(200);
-    res.json({ message: "test" });
-})
+app.use((err, req, res, next) => {
+    // console.error(err);
+    res.status(500).json({ error: "Internal Server Error" });
+});
+
+
+
+
 
 export default app;

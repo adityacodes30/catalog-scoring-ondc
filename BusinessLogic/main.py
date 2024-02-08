@@ -7,6 +7,24 @@
 import pika, sys, os
 
 def main():
+
+    # Establish a connection
+    connectionToNotifQ = pika.BlockingConnection(pika.ConnectionParameters('localhost', 9090))
+
+# Create a channel
+    channelToNotifQ = connectionToNotifQ.channel()
+
+# Declare a queue
+    channelToNotifQ.queue_declare(queue='notificationQueue')
+
+# Publish a message
+    
+
+    
+
+# Close the connection
+   
+
     connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost', port=8080))
     channel = connection.channel()
 
@@ -14,11 +32,16 @@ def main():
 
     def callback(ch, method, properties, body):
         print(f" [x] Received {body}")
+        channelToNotifQ.basic_publish(exchange='', routing_key='notificationQueue', body=body)
+
 
     channel.basic_consume(queue='catalogQueue', on_message_callback=callback, auto_ack=True)
 
     print(' [*] Waiting for messages. To exit press CTRL+C')
     channel.start_consuming()
+
+
+   
 
 
 main()

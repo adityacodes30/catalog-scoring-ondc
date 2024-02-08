@@ -2,7 +2,8 @@ import express from "express";
 
 const catalogRouter = express.Router();
 
-import connect from "../utils/connction";
+import connect from "../utils/connction.js";
+
 
 const channel = await connect();
 
@@ -21,20 +22,34 @@ catalogRouter.post("/", (req, res) => {
     res.status(400);
     res.json({ message: "NACK - No data received" });
     return;
-  } else {
-    res.status(200);
-    res.json({ message: "ACK" });
-  }
+  } 
 
-  const payload = JSON.parse(req.body.data);
-
+  
+  
+  const payload = req.body.data;
+  const searchString = payload.searchString;
   const context = payload.context;
   const message = payload.message;
 
   const callback_url = context.bap_uri + "/on_catalog";
 
-  catalog = JSON.stringify(message.catalogs);
+  const rawData = {
+    searchString: searchString,
+    callback_url: callback_url,
+    message: message,
+  };
 
+  console.log(rawData);
+
+  
+  try{
+  channel.sendToQueue("catalogQueue", Buffer.from(JSON.stringify(rawData)));
+  // catalog = JSON.stringify(message.catalogs);
+  }
+  catch(err){
+    res.status(400).json({ message: "queueing failed" });
+  }
+  res.status(200).json({ message: "ACK" });
    
 
 
