@@ -127,7 +127,7 @@ def zero_shot_image_formatted(img, labels):
 # print(temp_summary)
 
 """## **SCORING**"""
-
+nlp= spacy.load("en_core_web_sm")
 def name_disc_score(name, short_disc, long_disc, labels):
   n_compute = zero_shot_text_formatted(name, labels)
   sd_compute = zero_shot_text_formatted(short_disc, labels)
