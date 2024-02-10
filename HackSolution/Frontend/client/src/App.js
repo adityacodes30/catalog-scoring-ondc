@@ -3,7 +3,7 @@ import './App.css';
 import catalogItems from './items.js';
 import ItemCard from './components/ItemCard.js';
 import ResultCard from './components/ResultCard.js';
-import axios from 'axios'; 
+import axios from 'axios';
 
 const App = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -14,7 +14,7 @@ const App = () => {
       import(`./TestData/${selectedItem}.json`)
         .then((module) => {
           const data = module.default;
-          // console.log(data);
+          console.log(data)
           setItemDetails(data);
         })
         .catch((error) =>
@@ -29,7 +29,7 @@ const App = () => {
 
   const sendRequest = () => {
     if (itemDetails) {
-      axios.post('http://localhost:3000/api/itemsData', itemDetails) 
+      axios.post('http://localhost:4500/api/datasender', itemDetails)
         .then(response => {
           console.log('Data sent successfully!', response.data);
         })
