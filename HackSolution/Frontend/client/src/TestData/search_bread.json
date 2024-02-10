@@ -1,0 +1,56 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "transaction_id": "71017106-465b-4cc9-8a35-e6898b10120d",
+        "message_id": "2d50b1ec-b7fc-49f0-bec3-9c8656d2c43d",
+        "timestamp": "2024-02-07T18:54:14.992Z",
+        "ttl": "PT30S"
+    },
+    "searchRequest": {
+        "context": {
+            "domain": "nic2004:52110",
+            "country": "IND",
+            "city": "std:080",
+            "action": "search",
+            "core_version": "1.1.0",
+            "bap_id": "buyer-app-preprod.ondc.org",
+            "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+            "transaction_id": "71017106-465b-4cc9-8a35-e6898b10120d",
+            "message_id": "2d50b1ec-b7fc-49f0-bec3-9c8656d2c43d",
+            "timestamp": "2024-02-07T18:54:14.992Z",
+            "ttl": "PT30S"
+        },
+        "message": {
+            "intent": {
+                "item": {
+                    "descriptor": {
+                        "name": "bread"
+                    }
+                },
+                "fulfillment": {
+                    "type": "Delivery",
+                    "end": {
+                        "location": {
+                            "gps": "31.803165,75.383979"
+                        }
+                    }
+                },
+                "payment": {
+                    "@ondc/org/buyer_app_finder_fee_type": "percent",
+                    "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+                }
+            }
+        }
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}

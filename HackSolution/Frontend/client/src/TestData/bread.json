@@ -1,0 +1,1678 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "transaction_id": "26da2c7f-cfef-499d-ae29-9ac2fad461ab",
+        "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+        "timestamp": "2024-02-08T05:37:28.020Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "catalogs": [
+            {
+                "id": "fe3467e7-2104-46f3-9acf-10a65b0ad75d",
+                "parent_item_id": "12121213232323",
+                "time": {
+                    "label": "enable",
+                    "timestamp": "2024-02-07T13:30:20.979Z"
+                },
+                "descriptor": {
+                    "name": "Corn Flakes",
+                    "short_desc": "Corn Flakes",
+                    "long_desc": "Corn Flakes Premium",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ]
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "899.0",
+                    "maximum_value": "1099.0"
+                },
+                "quantity": {
+                    "unitized": {
+                        "measure": {
+                            "unit": "gram",
+                            "value": "500"
+                        }
+                    },
+                    "available": {
+                        "count": "99"
+                    },
+                    "maximum": {
+                        "count": "99"
+                    }
+                },
+                "@ondc/org/time_to_ship": "P2D",
+                "location_id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                "@ondc/org/returnable": true,
+                "@ondc/org/return_window": "P7D",
+                "@ondc/org/cancellable": true,
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/contact_details_consumer_care": "Mayur Popli,mayur.popli@thewitslab.com,9876543210",
+                "category_id": "Cereals and Breakfast",
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "manufacturer_or_packer_name": "Reebok Ind Pvt ltd.",
+                    "manufacturer_or_packer_address": "Reebok India.\nVillage Kharar, P.O. Mohali, Dist. -Mohali (P.B.) -140301",
+                    "common_or_generic_name_of_commodity": "Fashion",
+                    "month_year_of_manufacture_packing_import": "January , 2023",
+                    "nutritional_info": "Refer back image",
+                    "additives_info": "Refer back image",
+                    "brand_owner_FSSAI_license_no": "Refer back image",
+                    "other_FSSAI_license_no": "Refer back image",
+                    "importer_FSSAI_license_no": "12345678901234"
+                },
+                "tags": [
+                    {
+                        "code": "veg_nonveg",
+                        "list": [
+                            {
+                                "code": "veg",
+                                "value": "yes"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "origin",
+                        "list": [
+                            {
+                                "code": "country",
+                                "value": "IND"
+                            }
+                        ]
+                    }
+                ],
+                "fulfillment_id": "c461a827-f43d-487e-871d-e13467acd866",
+                "provider_details": {
+                    "id": "ondc-mock-server-dev.thewitslab.com",
+                    "descriptor": {
+                        "name": "WITS ONDC TEST STORE",
+                        "short_desc": "Wits Testing Store",
+                        "long_desc": "Wits Testing Store",
+                        "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                        "images": [
+                            "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                    "gps": "28.553440, 77.214241",
+                    "address": {
+                        "street": "7/6, August Kranti Marg",
+                        "locality": "Siri Fort Institutional Area, Siri Fort",
+                        "city": "New Delhi",
+                        "state": "Delhi",
+                        "area_code": "110049"
+                    },
+                    "circle": {
+                        "gps": "28.553440, 77.214241",
+                        "radius": {
+                            "unit": "km",
+                            "value": "10"
+                        }
+                    },
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2024-02-07T13:30:20.979Z",
+                        "days": "1,2,3,4,5,6,7",
+                        "schedule": {
+                            "holidays": []
+                        },
+                        "range": {
+                            "start": "0000",
+                            "end": "2359"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "c461a827-f43d-487e-871d-e13467acd866",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "domain": "nic2004:52110",
+                    "country": "IND",
+                    "city": "std:011",
+                    "action": "on_search",
+                    "core_version": "1.1.0",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "timestamp": "2024-02-08T05:37:22.144Z",
+                    "ttl": "PT30S",
+                    "bpp_uri": "https://ondc-mock-server-dev.thewitslab.com/seller",
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "bpp_details": {
+                    "name": "WITS ONDC TEST STORE",
+                    "short_desc": "Wits Testing Store",
+                    "long_desc": "Wits Testing Store",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ],
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:59:00.011Z"
+            },
+            {
+                "id": "903b94ab-7605-4dd4-b0ff-d9ac92d3dd0e",
+                "parent_item_id": "12121213232323",
+                "time": {
+                    "label": "enable",
+                    "timestamp": "2024-02-07T13:30:20.979Z"
+                },
+                "descriptor": {
+                    "name": "Honey",
+                    "short_desc": "Honey , 300gm",
+                    "long_desc": "Natural Honey Organic , 300gm",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ]
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "299.0",
+                    "maximum_value": "309.0"
+                },
+                "quantity": {
+                    "unitized": {
+                        "measure": {
+                            "unit": "gram",
+                            "value": "300"
+                        }
+                    },
+                    "available": {
+                        "count": "0"
+                    },
+                    "maximum": {
+                        "count": "0"
+                    }
+                },
+                "@ondc/org/time_to_ship": "P2D",
+                "location_id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                "@ondc/org/returnable": true,
+                "@ondc/org/return_window": "P7D",
+                "@ondc/org/cancellable": true,
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/contact_details_consumer_care": "Mayur Popli,mayur.popli@thewitslab.com,9876543210",
+                "category_id": "Cereals and Breakfast",
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "manufacturer_or_packer_name": "Natural Ind Pvt ltd.",
+                    "manufacturer_or_packer_address": "Natural India.\nVillage Kharar, P.O. Mohali, Dist. -Mohali (P.B.) -140301",
+                    "common_or_generic_name_of_commodity": "Food and Beverages",
+                    "month_year_of_manufacture_packing_import": "January , 2023",
+                    "nutritional_info": "Refer back image",
+                    "additives_info": "Refer back image",
+                    "brand_owner_FSSAI_license_no": "Refer back image",
+                    "other_FSSAI_license_no": "Refer back image",
+                    "importer_FSSAI_license_no": "12345678901234"
+                },
+                "tags": [
+                    {
+                        "code": "veg_nonveg",
+                        "list": [
+                            {
+                                "code": "veg",
+                                "value": "yes"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "origin",
+                        "list": [
+                            {
+                                "code": "country",
+                                "value": "IND"
+                            }
+                        ]
+                    }
+                ],
+                "fulfillment_id": "56d0f31d-20c9-4fe2-86c2-a6091af81df9",
+                "provider_details": {
+                    "id": "ondc-mock-server-dev.thewitslab.com",
+                    "descriptor": {
+                        "name": "WITS ONDC TEST STORE",
+                        "short_desc": "Wits Testing Store",
+                        "long_desc": "Wits Testing Store",
+                        "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                        "images": [
+                            "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                    "gps": "28.553440, 77.214241",
+                    "address": {
+                        "street": "7/6, August Kranti Marg",
+                        "locality": "Siri Fort Institutional Area, Siri Fort",
+                        "city": "New Delhi",
+                        "state": "Delhi",
+                        "area_code": "110049"
+                    },
+                    "circle": {
+                        "gps": "28.553440, 77.214241",
+                        "radius": {
+                            "unit": "km",
+                            "value": "10"
+                        }
+                    },
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2024-02-07T13:30:20.979Z",
+                        "days": "1,2,3,4,5,6,7",
+                        "schedule": {
+                            "holidays": []
+                        },
+                        "range": {
+                            "start": "0000",
+                            "end": "2359"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "56d0f31d-20c9-4fe2-86c2-a6091af81df9",
+                    "type": "Self-Pickup"
+                },
+                "context": {
+                    "domain": "nic2004:52110",
+                    "country": "IND",
+                    "city": "std:011",
+                    "action": "on_search",
+                    "core_version": "1.1.0",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "timestamp": "2024-02-08T05:37:22.144Z",
+                    "ttl": "PT30S",
+                    "bpp_uri": "https://ondc-mock-server-dev.thewitslab.com/seller",
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "bpp_details": {
+                    "name": "WITS ONDC TEST STORE",
+                    "short_desc": "Wits Testing Store",
+                    "long_desc": "Wits Testing Store",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ],
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:59:00.013Z"
+            },
+            {
+                "id": "a34b412a-b2e4-4395-a175-a9f6ea388b4f",
+                "parent_item_id": "12121213232323",
+                "time": {
+                    "label": "enable",
+                    "timestamp": "2024-02-07T13:30:20.979Z"
+                },
+                "descriptor": {
+                    "name": "Coffee Beans",
+                    "short_desc": "Organic coffee , 100gm",
+                    "long_desc": "Organic Premium Aromatic Coffee , 100gm",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ]
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "199.0",
+                    "maximum_value": "209.0"
+                },
+                "quantity": {
+                    "unitized": {
+                        "measure": {
+                            "unit": "gram",
+                            "value": "100"
+                        }
+                    },
+                    "available": {
+                        "count": "99"
+                    },
+                    "maximum": {
+                        "count": "99"
+                    }
+                },
+                "@ondc/org/time_to_ship": "P2D",
+                "location_id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                "@ondc/org/returnable": true,
+                "@ondc/org/return_window": "P7D",
+                "@ondc/org/cancellable": false,
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/contact_details_consumer_care": "Mayur Popli,mayur.popli@thewitslab.com,9876543210",
+                "category_id": "Cereals and Breakfast",
+                "category_ids": [
+                    "L5qF1Aa5ENHK:1"
+                ],
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "manufacturer_or_packer_name": "Natural Ind Pvt ltd.",
+                    "manufacturer_or_packer_address": "Natural India.\nVillage Kharar, P.O. Mohali, Dist. -Mohali (P.B.) -140301",
+                    "common_or_generic_name_of_commodity": "Food and Beverages",
+                    "month_year_of_manufacture_packing_import": "January , 2023",
+                    "nutritional_info": "Refer back image",
+                    "additives_info": "Refer back image",
+                    "brand_owner_FSSAI_license_no": "Refer back image",
+                    "other_FSSAI_license_no": "Refer back image",
+                    "importer_FSSAI_license_no": "12345678901234"
+                },
+                "tags": [
+                    {
+                        "code": "veg_nonveg",
+                        "list": [
+                            {
+                                "code": "veg",
+                                "value": "yes"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "origin",
+                        "list": [
+                            {
+                                "code": "country",
+                                "value": "IND"
+                            }
+                        ]
+                    }
+                ],
+                "fulfillment_id": "a2afcb16-8d8d-47a9-b10a-12677f312dfa",
+                "provider_details": {
+                    "id": "ondc-mock-server-dev.thewitslab.com",
+                    "descriptor": {
+                        "name": "WITS ONDC TEST STORE",
+                        "short_desc": "Wits Testing Store",
+                        "long_desc": "Wits Testing Store",
+                        "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                        "images": [
+                            "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                    "gps": "28.553440, 77.214241",
+                    "address": {
+                        "street": "7/6, August Kranti Marg",
+                        "locality": "Siri Fort Institutional Area, Siri Fort",
+                        "city": "New Delhi",
+                        "state": "Delhi",
+                        "area_code": "110049"
+                    },
+                    "circle": {
+                        "gps": "28.553440, 77.214241",
+                        "radius": {
+                            "unit": "km",
+                            "value": "10"
+                        }
+                    },
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2024-02-07T13:30:20.979Z",
+                        "days": "1,2,3,4,5,6,7",
+                        "schedule": {
+                            "holidays": []
+                        },
+                        "range": {
+                            "start": "0000",
+                            "end": "2359"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "a2afcb16-8d8d-47a9-b10a-12677f312dfa",
+                    "type": "Delivery and Self-Pickup"
+                },
+                "context": {
+                    "domain": "nic2004:52110",
+                    "country": "IND",
+                    "city": "std:011",
+                    "action": "on_search",
+                    "core_version": "1.1.0",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "timestamp": "2024-02-08T05:37:22.144Z",
+                    "ttl": "PT30S",
+                    "bpp_uri": "https://ondc-mock-server-dev.thewitslab.com/seller",
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "bpp_details": {
+                    "name": "WITS ONDC TEST STORE",
+                    "short_desc": "Wits Testing Store",
+                    "long_desc": "Wits Testing Store",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ],
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:59:00.014Z"
+            },
+            {
+                "id": "6dad73f7-2e1d-46c2-b273-fe041faeadaf",
+                "parent_item_id": "QOs1sHRuDVZK",
+                "time": {
+                    "label": "enable",
+                    "timestamp": "2024-02-07T13:30:20.979Z"
+                },
+                "descriptor": {
+                    "name": "Wheat",
+                    "short_desc": "Wits QA Wheat",
+                    "long_desc": "Wits QA Wheat newly launched",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ]
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "199.0",
+                    "maximum_value": "259.0"
+                },
+                "quantity": {
+                    "unitized": {
+                        "measure": {
+                            "unit": "kilogram",
+                            "value": "1"
+                        }
+                    },
+                    "available": {
+                        "count": "99"
+                    },
+                    "maximum": {
+                        "count": "99"
+                    }
+                },
+                "@ondc/org/time_to_ship": "P1D",
+                "location_id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                "@ondc/org/returnable": true,
+                "@ondc/org/return_window": "P2D",
+                "@ondc/org/cancellable": false,
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/available_on_cod": true,
+                "@ondc/org/contact_details_consumer_care": "Mayur Popli,mayur.popli@thewitslab.com,9876543210",
+                "category_id": "Cereals and Breakfast",
+                "category_ids": [
+                    "L5qF1Aa5ENHK:2"
+                ],
+                "related": true,
+                "recommended": true,
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "manufacturer_or_packer_name": "Wits Ind Pvt ltd.",
+                    "manufacturer_or_packer_address": "Wits India. Village Kharar, P.O. Mohali, Dist. Mohali (P.B.) 140301",
+                    "common_or_generic_name_of_commodity": "Foodgrains",
+                    "month_year_of_manufacture_packing_import": "January , 2023",
+                    "nutritional_info": "Refer Box",
+                    "additives_info": "Refer Box",
+                    "brand_owner_FSSAI_license_no": "Refer Box",
+                    "other_FSSAI_license_no": "Not Available",
+                    "importer_FSSAI_license_no": "12345678901234"
+                },
+                "tags": [
+                    {
+                        "code": "origin",
+                        "list": [
+                            {
+                                "code": "country",
+                                "value": "IND"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "veg_nonveg",
+                        "list": [
+                            {
+                                "code": "veg",
+                                "value": "yes"
+                            }
+                        ]
+                    }
+                ],
+                "fulfillment_id": "c461a827-f43d-487e-871d-e13467acd866",
+                "provider_details": {
+                    "id": "ondc-mock-server-dev.thewitslab.com",
+                    "descriptor": {
+                        "name": "WITS ONDC TEST STORE",
+                        "short_desc": "Wits Testing Store",
+                        "long_desc": "Wits Testing Store",
+                        "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                        "images": [
+                            "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                    "gps": "28.553440, 77.214241",
+                    "address": {
+                        "street": "7/6, August Kranti Marg",
+                        "locality": "Siri Fort Institutional Area, Siri Fort",
+                        "city": "New Delhi",
+                        "state": "Delhi",
+                        "area_code": "110049"
+                    },
+                    "circle": {
+                        "gps": "28.553440, 77.214241",
+                        "radius": {
+                            "unit": "km",
+                            "value": "10"
+                        }
+                    },
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2024-02-07T13:30:20.979Z",
+                        "days": "1,2,3,4,5,6,7",
+                        "schedule": {
+                            "holidays": []
+                        },
+                        "range": {
+                            "start": "0000",
+                            "end": "2359"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "c461a827-f43d-487e-871d-e13467acd866",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "domain": "nic2004:52110",
+                    "country": "IND",
+                    "city": "std:011",
+                    "action": "on_search",
+                    "core_version": "1.1.0",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "timestamp": "2024-02-08T05:37:22.144Z",
+                    "ttl": "PT30S",
+                    "bpp_uri": "https://ondc-mock-server-dev.thewitslab.com/seller",
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "bpp_details": {
+                    "name": "WITS ONDC TEST STORE",
+                    "short_desc": "Wits Testing Store",
+                    "long_desc": "Wits Testing Store",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ],
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:59:00.015Z"
+            },
+            {
+                "id": "ad193e16-1afd-4db6-b3c7-c22783633de9",
+                "parent_item_id": "QOs1sHRuDVZK",
+                "time": {
+                    "label": "enable",
+                    "timestamp": "2024-02-07T13:30:20.979Z"
+                },
+                "descriptor": {
+                    "name": "Wheat",
+                    "short_desc": "Wits QA Wheat",
+                    "long_desc": "Wits QA Wheat newly launched",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ]
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "249.0",
+                    "maximum_value": "299.0"
+                },
+                "quantity": {
+                    "unitized": {
+                        "measure": {
+                            "unit": "kilogram",
+                            "value": "2"
+                        }
+                    },
+                    "available": {
+                        "count": "99"
+                    },
+                    "maximum": {
+                        "count": "99"
+                    }
+                },
+                "@ondc/org/time_to_ship": "P1D",
+                "location_id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                "@ondc/org/returnable": true,
+                "@ondc/org/return_window": "P2D",
+                "@ondc/org/cancellable": false,
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/available_on_cod": true,
+                "@ondc/org/contact_details_consumer_care": "Mayur Popli,mayur.popli@thewitslab.com,9876543210",
+                "category_id": "Cereals and Breakfast",
+                "category_ids": [
+                    "L5qF1Aa5ENHK:2"
+                ],
+                "related": true,
+                "recommended": true,
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "manufacturer_or_packer_name": "Wits Ind Pvt ltd.",
+                    "manufacturer_or_packer_address": "Wits India.\nVillage Kharar, P.O. Mohali, Dist. -Mohali (P.B.) -140301",
+                    "common_or_generic_name_of_commodity": "Foodgrains",
+                    "month_year_of_manufacture_packing_import": "January , 2023",
+                    "nutritional_info": "Refer Box",
+                    "additives_info": "Refer Box",
+                    "brand_owner_FSSAI_license_no": "Refer Box",
+                    "other_FSSAI_license_no": "Not Available",
+                    "importer_FSSAI_license_no": "12345678901234"
+                },
+                "tags": [
+                    {
+                        "code": "origin",
+                        "list": [
+                            {
+                                "code": "country",
+                                "value": "IND"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "veg_nonveg",
+                        "list": [
+                            {
+                                "code": "veg",
+                                "value": "yes"
+                            }
+                        ]
+                    }
+                ],
+                "fulfillment_id": "c461a827-f43d-487e-871d-e13467acd866",
+                "provider_details": {
+                    "id": "ondc-mock-server-dev.thewitslab.com",
+                    "descriptor": {
+                        "name": "WITS ONDC TEST STORE",
+                        "short_desc": "Wits Testing Store",
+                        "long_desc": "Wits Testing Store",
+                        "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                        "images": [
+                            "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                    "gps": "28.553440, 77.214241",
+                    "address": {
+                        "street": "7/6, August Kranti Marg",
+                        "locality": "Siri Fort Institutional Area, Siri Fort",
+                        "city": "New Delhi",
+                        "state": "Delhi",
+                        "area_code": "110049"
+                    },
+                    "circle": {
+                        "gps": "28.553440, 77.214241",
+                        "radius": {
+                            "unit": "km",
+                            "value": "10"
+                        }
+                    },
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2024-02-07T13:30:20.979Z",
+                        "days": "1,2,3,4,5,6,7",
+                        "schedule": {
+                            "holidays": []
+                        },
+                        "range": {
+                            "start": "0000",
+                            "end": "2359"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "c461a827-f43d-487e-871d-e13467acd866",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "domain": "nic2004:52110",
+                    "country": "IND",
+                    "city": "std:011",
+                    "action": "on_search",
+                    "core_version": "1.1.0",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "timestamp": "2024-02-08T05:37:22.144Z",
+                    "ttl": "PT30S",
+                    "bpp_uri": "https://ondc-mock-server-dev.thewitslab.com/seller",
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "bpp_details": {
+                    "name": "WITS ONDC TEST STORE",
+                    "short_desc": "Wits Testing Store",
+                    "long_desc": "Wits Testing Store",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ],
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:59:00.016Z"
+            },
+            {
+                "id": "2f5944dd-8441-4c4e-987a-d2a1e022239b",
+                "parent_item_id": "QOs1sHRuDVZK",
+                "time": {
+                    "label": "enable",
+                    "timestamp": "2024-02-07T13:30:20.979Z"
+                },
+                "descriptor": {
+                    "name": "Wheat",
+                    "short_desc": "Wits QA Wheat",
+                    "long_desc": "Wits QA Wheat newly launched",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ]
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "499.0",
+                    "maximum_value": "699.0"
+                },
+                "quantity": {
+                    "unitized": {
+                        "measure": {
+                            "unit": "kilogram",
+                            "value": "5"
+                        }
+                    },
+                    "available": {
+                        "count": "99"
+                    },
+                    "maximum": {
+                        "count": "99"
+                    }
+                },
+                "@ondc/org/time_to_ship": "P1D",
+                "location_id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                "@ondc/org/returnable": true,
+                "@ondc/org/return_window": "P2D",
+                "@ondc/org/cancellable": false,
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/available_on_cod": true,
+                "@ondc/org/contact_details_consumer_care": "Mayur Popli,mayur.popli@thewitslab.com,9876543210",
+                "category_id": "Cereals and Breakfast",
+                "category_ids": [
+                    "L5qF1Aa5ENHK:2"
+                ],
+                "related": true,
+                "recommended": true,
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "manufacturer_or_packer_name": "Wits Ind Pvt ltd.",
+                    "manufacturer_or_packer_address": "Wits India.\nVillage Kharar, P.O. Mohali, Dist. -Mohali (P.B.) -140301",
+                    "common_or_generic_name_of_commodity": "Foodgrains",
+                    "month_year_of_manufacture_packing_import": "January , 2023",
+                    "nutritional_info": "Refer Box",
+                    "additives_info": "Refer Box",
+                    "brand_owner_FSSAI_license_no": "Refer Box",
+                    "other_FSSAI_license_no": "Not Available",
+                    "importer_FSSAI_license_no": "12345678901234"
+                },
+                "tags": [
+                    {
+                        "code": "origin",
+                        "list": [
+                            {
+                                "code": "country",
+                                "value": "IND"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "veg_nonveg",
+                        "list": [
+                            {
+                                "code": "veg",
+                                "value": "yes"
+                            }
+                        ]
+                    }
+                ],
+                "fulfillment_id": "c461a827-f43d-487e-871d-e13467acd866",
+                "provider_details": {
+                    "id": "ondc-mock-server-dev.thewitslab.com",
+                    "descriptor": {
+                        "name": "WITS ONDC TEST STORE",
+                        "short_desc": "Wits Testing Store",
+                        "long_desc": "Wits Testing Store",
+                        "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                        "images": [
+                            "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                    "gps": "28.553440, 77.214241",
+                    "address": {
+                        "street": "7/6, August Kranti Marg",
+                        "locality": "Siri Fort Institutional Area, Siri Fort",
+                        "city": "New Delhi",
+                        "state": "Delhi",
+                        "area_code": "110049"
+                    },
+                    "circle": {
+                        "gps": "28.553440, 77.214241",
+                        "radius": {
+                            "unit": "km",
+                            "value": "10"
+                        }
+                    },
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2024-02-07T13:30:20.979Z",
+                        "days": "1,2,3,4,5,6,7",
+                        "schedule": {
+                            "holidays": []
+                        },
+                        "range": {
+                            "start": "0000",
+                            "end": "2359"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "c461a827-f43d-487e-871d-e13467acd866",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "domain": "nic2004:52110",
+                    "country": "IND",
+                    "city": "std:011",
+                    "action": "on_search",
+                    "core_version": "1.1.0",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "timestamp": "2024-02-08T05:37:22.144Z",
+                    "ttl": "PT30S",
+                    "bpp_uri": "https://ondc-mock-server-dev.thewitslab.com/seller",
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "bpp_details": {
+                    "name": "WITS ONDC TEST STORE",
+                    "short_desc": "Wits Testing Store",
+                    "long_desc": "Wits Testing Store",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ],
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:59:00.017Z"
+            },
+            {
+                "id": "3f8321b5-402f-419e-af47-89bf4b077528",
+                "parent_item_id": "12121213232323",
+                "time": {
+                    "label": "enable",
+                    "timestamp": "2024-02-07T13:30:20.979Z"
+                },
+                "descriptor": {
+                    "name": "Rice",
+                    "short_desc": "Wits Rice",
+                    "long_desc": "Wits Basmati Rice",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ]
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "149.0",
+                    "maximum_value": "179.0"
+                },
+                "quantity": {
+                    "unitized": {
+                        "measure": {
+                            "unit": "kilogram",
+                            "value": "1"
+                        }
+                    },
+                    "available": {
+                        "count": "99"
+                    },
+                    "maximum": {
+                        "count": "99"
+                    }
+                },
+                "@ondc/org/time_to_ship": "P2D",
+                "location_id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                "@ondc/org/returnable": false,
+                "@ondc/org/return_window": "P7D",
+                "@ondc/org/cancellable": false,
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/contact_details_consumer_care": "Mayur Popli,mayur.popli@thewitslab.com,9876543210",
+                "category_id": "Cereals and Breakfast",
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "manufacturer_or_packer_name": "Reebok Ind Pvt ltd.",
+                    "manufacturer_or_packer_address": "Reebok India.\nVillage Kharar, P.O. Mohali, Dist. -Mohali (P.B.) -140301",
+                    "common_or_generic_name_of_commodity": "Fashion",
+                    "month_year_of_manufacture_packing_import": "January , 2023",
+                    "nutritional_info": "Refer back image",
+                    "additives_info": "Refer back image",
+                    "brand_owner_FSSAI_license_no": "Refer back image",
+                    "other_FSSAI_license_no": "Refer back image",
+                    "importer_FSSAI_license_no": "12345678901234"
+                },
+                "tags": [
+                    {
+                        "code": "veg_nonveg",
+                        "list": [
+                            {
+                                "code": "veg",
+                                "value": "yes"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "origin",
+                        "list": [
+                            {
+                                "code": "country",
+                                "value": "IND"
+                            }
+                        ]
+                    }
+                ],
+                "fulfillment_id": "c461a827-f43d-487e-871d-e13467acd866",
+                "provider_details": {
+                    "id": "ondc-mock-server-dev.thewitslab.com",
+                    "descriptor": {
+                        "name": "WITS ONDC TEST STORE",
+                        "short_desc": "Wits Testing Store",
+                        "long_desc": "Wits Testing Store",
+                        "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                        "images": [
+                            "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "f13873c1-810d-4f2b-ba54-5edcec9f0e4a",
+                    "gps": "28.553440, 77.214241",
+                    "address": {
+                        "street": "7/6, August Kranti Marg",
+                        "locality": "Siri Fort Institutional Area, Siri Fort",
+                        "city": "New Delhi",
+                        "state": "Delhi",
+                        "area_code": "110049"
+                    },
+                    "circle": {
+                        "gps": "28.553440, 77.214241",
+                        "radius": {
+                            "unit": "km",
+                            "value": "10"
+                        }
+                    },
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2024-02-07T13:30:20.979Z",
+                        "days": "1,2,3,4,5,6,7",
+                        "schedule": {
+                            "holidays": []
+                        },
+                        "range": {
+                            "start": "0000",
+                            "end": "2359"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "c461a827-f43d-487e-871d-e13467acd866",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "domain": "nic2004:52110",
+                    "country": "IND",
+                    "city": "std:011",
+                    "action": "on_search",
+                    "core_version": "1.1.0",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "timestamp": "2024-02-08T05:37:22.144Z",
+                    "ttl": "PT30S",
+                    "bpp_uri": "https://ondc-mock-server-dev.thewitslab.com/seller",
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "bpp_details": {
+                    "name": "WITS ONDC TEST STORE",
+                    "short_desc": "Wits Testing Store",
+                    "long_desc": "Wits Testing Store",
+                    "symbol": "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png",
+                    "images": [
+                        "https://res.cloudinary.com/dxum9bu0r/image/upload/v1706624067/Frame_qvtmt7.png"
+                    ],
+                    "bpp_id": "ondc-mock-server-dev.thewitslab.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:59:00.017Z"
+            },
+            {
+                "id": "5139-ONDC-225-307",
+                "descriptor": {
+                    "name": "Milka Bread",
+                    "code": "5:5139-ONDC-225-307",
+                    "symbol": "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/5139/5139_ONDC_307_1678689131054.jpeg",
+                    "short_desc": "Milka Bread",
+                    "long_desc": "Milka Bread",
+                    "images": [
+                        "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/5139/5139_ONDC_307_1678689131054.jpeg",
+                        "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/5139/5139_ONDC_307_1678709479826.jpeg",
+                        "https://trueposstaging.s3.amazonaws.com/zpqwdxc3anmqicsfaheirafybpew7ifmkccdhriavlzjpqzadvjg7mc.jpeg"
+                    ]
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "150.0",
+                    "maximum_value": "200.00"
+                },
+                "location_id": "5139-ONDC-225-3402_location",
+                "matched": true,
+                "related": true,
+                "recommended": true,
+                "quantity": {
+                    "available": {
+                        "count": "99"
+                    },
+                    "maximum": {
+                        "count": "1936"
+                    }
+                },
+                "category_id": "Snacks & Branded Foods",
+                "category_ids": [],
+                "fulfillment_id": "1",
+                "@ondc/org/returnable": true,
+                "@ondc/org/cancellable": true,
+                "@ondc/org/return_window": "P365D",
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/time_to_ship": "PT1H",
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "nutritional_info": "Please refer back image",
+                    "additives_info": "Please refer back image",
+                    "brand_owner_FSSAI_license_no": "Please refer back image",
+                    "other_FSSAI_license_no": "NA",
+                    "importer_FSSAI_license_no": "Please refer back image",
+                    "imported_product_country_of_origin": "IND"
+                },
+                "@ondc/org/contact_details_consumer_care": "Logesh,ss@gmail.com,9911723344",
+                "provider_details": {
+                    "id": "5139-ONDC-225",
+                    "descriptor": {
+                        "name": "SSS TRUEPOS STORE",
+                        "symbol": "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/5139/5139-225-shop-img",
+                        "short_desc": "SSS TRUEPOS STORE",
+                        "long_desc": "SSS TRUEPOS STORE_",
+                        "images": [
+                            "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/5139/5139-225-shop-img"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "5139-ONDC-225-3402_location",
+                    "gps": "12.9121181,77.6445548",
+                    "address": {
+                        "door": "12",
+                        "building": "nnrewdrw",
+                        "street": "ss strreet",
+                        "locality": "nn",
+                        "city": "bangalore",
+                        "state": "karnataka",
+                        "country": "india",
+                        "area_code": "560102"
+                    },
+                    "circle": {
+                        "gps": "12.9121181,77.6445548",
+                        "radius": {
+                            "value": "10000",
+                            "unit": "km"
+                        }
+                    },
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2024-02-08T05:37:22.836Z",
+                        "range": {
+                            "start": "0900",
+                            "end": "2359"
+                        },
+                        "days": "1,2,3,4,5,6",
+                        "schedule": {
+                            "holidays": []
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "1",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "domain": "nic2004:52110",
+                    "country": "IND",
+                    "city": "std:080",
+                    "action": "on_search",
+                    "timestamp": "2024-02-08T05:37:22.836Z",
+                    "core_version": "1.1.0",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "bpp_id": "ondc-qa.gofrugalretail.com",
+                    "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc"
+                },
+                "bpp_details": {
+                    "name": "GOFRUGAL",
+                    "symbol": "https://cdn-web.gofrugal.com/images/logos/gofrugal-new-logo.svg",
+                    "short_desc": "Gofrugal Marketplace",
+                    "long_desc": "Gofrugal Marketplace",
+                    "images": [
+                        "https://cdn-web.gofrugal.com/images/logos/gofrugal-new-logo.svg"
+                    ],
+                    "bpp_id": "ondc-qa.gofrugalretail.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:59:00.017Z"
+            },
+            {
+                "id": "19609-ONDC-1-10223",
+                "descriptor": {
+                    "name": "Wheat Bread",
+                    "code": "5:19609-ONDC-1-10223",
+                    "symbol": "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/19609/19609_ONDC_10223_1701924431707.jpeg",
+                    "short_desc": "Wheat Bread",
+                    "long_desc": "Wheat Bread",
+                    "images": [
+                        "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/19609/19609_ONDC_10223_1701924431707.jpeg",
+                        "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/19609/19609_ONDC_10223_1701924433447.jpeg",
+                        "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/19609/19609_ONDC_10223_1701924434168.jpeg",
+                        "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/19609/19609_ONDC_10223_1701924434660.jpeg",
+                        "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/19609/19609_ONDC_10223_1701924435079.jpeg"
+                    ]
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "220.0",
+                    "maximum_value": "250.00"
+                },
+                "location_id": "19609-ONDC-1-3493_location",
+                "matched": true,
+                "related": true,
+                "recommended": true,
+                "quantity": {
+                    "available": {
+                        "count": "99"
+                    },
+                    "maximum": {
+                        "count": "600"
+                    }
+                },
+                "category_id": "Atta, Flours and Sooji",
+                "category_ids": [],
+                "fulfillment_id": "1",
+                "@ondc/org/returnable": false,
+                "@ondc/org/cancellable": true,
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/time_to_ship": "PT30M",
+                "@ondc/org/statutory_reqs_packaged_commodities": {
+                    "manufacturer_or_packer_name": "NA",
+                    "manufacturer_or_packer_address": "Please refer back image",
+                    "net_quantity_or_measure_of_commodity_in_pkg": "400g",
+                    "common_or_generic_name_of_commodity": "Wheat Bread",
+                    "month_year_of_manufacture_packing_import": "Please refer back image",
+                    "imported_product_country_of_origin": "IND"
+                },
+                "@ondc/org/contact_details_consumer_care": "Abinaya,abii@gmail.com,9898767675",
+                "provider_details": {
+                    "id": "19609-ONDC-1",
+                    "descriptor": {
+                        "name": "ONDC Rpos7",
+                        "symbol": "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/19609/19609-1-shop-img",
+                        "short_desc": "ONDC Rpos7",
+                        "long_desc": "ONDC Rpos7_",
+                        "images": [
+                            "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/19609/19609-1-shop-img"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "19609-ONDC-1-3493_location",
+                    "gps": "12.9298689,77.6848366",
+                    "address": {
+                        "door": "14",
+                        "building": "block v",
+                        "street": "45 1",
+                        "locality": "Vannar Pettai",
+                        "city": "Banglore",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560103"
+                    },
+                    "circle": {
+                        "gps": "12.9298689,77.6848366",
+                        "radius": {
+                            "value": "3000",
+                            "unit": "km"
+                        }
+                    },
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2024-02-08T05:37:22.836Z",
+                        "range": {
+                            "start": "1000",
+                            "end": "2000"
+                        },
+                        "days": "1,2,3,5,6,7,4",
+                        "schedule": {
+                            "holidays": []
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "1",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "domain": "nic2004:52110",
+                    "country": "IND",
+                    "city": "std:080",
+                    "action": "on_search",
+                    "timestamp": "2024-02-08T05:37:22.836Z",
+                    "core_version": "1.1.0",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "bpp_id": "ondc-qa.gofrugalretail.com",
+                    "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc"
+                },
+                "bpp_details": {
+                    "name": "GOFRUGAL",
+                    "symbol": "https://cdn-web.gofrugal.com/images/logos/gofrugal-new-logo.svg",
+                    "short_desc": "Gofrugal Marketplace",
+                    "long_desc": "Gofrugal Marketplace",
+                    "images": [
+                        "https://cdn-web.gofrugal.com/images/logos/gofrugal-new-logo.svg"
+                    ],
+                    "bpp_id": "ondc-qa.gofrugalretail.com"
+                },
+                "storeOpenTillDate": "2024-02-08T20:00:00.018Z"
+            },
+            {
+                "id": "12561",
+                "descriptor": {
+                    "name": "Britannia Multi Grain Bread  gm",
+                    "symbol": "https://enstore.sgp1.digitaloceanspaces.com/1016/item-12561-0cd2c71e5209513718eef12cb0d39f93-K28LgV40th.jpg",
+                    "short_desc": "Britannia Multi Grain Bread  gm",
+                    "long_desc": "Britannia Multi Grain Bread  gm",
+                    "images": [
+                        "https://enstore.sgp1.digitaloceanspaces.com/1016/item-12561-0cd2c71e5209513718eef12cb0d39f93-K28LgV40th.jpg",
+                        "https://media.goodbox.in/qo/menu-images/Galaxy256x256/8901063338623.jpg"
+                    ],
+                    "code": "5:BTS7HPiikjzmQHwS"
+                },
+                "quantity": {
+                    "available": {
+                        "count": "24"
+                    },
+                    "maximum": {
+                        "count": "24"
+                    }
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "50.0",
+                    "maximum_value": "50"
+                },
+                "category_id": "Snacks & Branded Foods",
+                "fulfillment_id": "1",
+                "location_id": "L:1016:717",
+                "@ondc/org/returnable": false,
+                "@ondc/org/cancellable": true,
+                "@ondc/org/return_window": "PT3H",
+                "@ondc/org/seller_pickup_return": true,
+                "@ondc/org/time_to_ship": "PT45M",
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/contact_details_consumer_care": "DS das banaswadi new, smruti@bitsillaa.com, 3456734567",
+                "matched": true,
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "nutritional_info": "Britannia Multi Grain Bread",
+                    "additives_info": "Britannia Multi Grain Bread",
+                    "brand_owner_FSSAI_license_no": "11219333002755",
+                    "importer_FSSAI_license_no": "11219333002755"
+                },
+                "provider_details": {
+                    "id": "1016:717",
+                    "descriptor": {
+                        "name": "DS das banaswadi new",
+                        "symbol": "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png",
+                        "short_desc": "DS super market",
+                        "long_desc": "DS super market",
+                        "images": [
+                            "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "L:1016:717",
+                    "gps": "13.011526, 77.6459584",
+                    "address": {
+                        "street": "Banaswadi Fire Station 2J5X+33V, 157/3, 2nd C Cross Rd, HRBR Layout 1st Block, Balaji Layout",
+                        "city": "Bengaluru",
+                        "area_code": "560043",
+                        "state": "Karnataka",
+                        "locality": "Balaji Layout, Subbaiahnapalya, "
+                    },
+                    "time": {
+                        "days": "1,2,3,4,5,6,7",
+                        "range": {
+                            "start": "1200",
+                            "end": "2355",
+                            "holidays": []
+                        }
+                    },
+                    "circle": {
+                        "gps": "13.011526, 77.6459584",
+                        "radius": {
+                            "unit": "km",
+                            "value": "3000.0"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "1",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "ttl": "PT30S",
+                    "city": "std:080",
+                    "action": "on_search",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "domain": "nic2004:52110",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "country": "IND",
+                    "timestamp": "2024-02-08T05:37:22.344Z",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "core_version": "1.1.0",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "bpp_id": "biz.test.bitsila.com",
+                    "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp"
+                },
+                "bpp_details": {
+                    "name": "Bitsila",
+                    "symbol": "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png",
+                    "short_desc": "Bitsila",
+                    "long_desc": "Bitsila",
+                    "images": [
+                        "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png"
+                    ],
+                    "bpp_id": "biz.test.bitsila.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:55:00.019Z"
+            },
+            {
+                "id": "12120",
+                "descriptor": {
+                    "name": "Britannia Popular Bread  gm",
+                    "symbol": "https://enstore.sgp1.digitaloceanspaces.com/1016/item-12120-34041a2144e796e9c8e2334f29e03ddb-Mqm2vz8N7t.jpg",
+                    "short_desc": "Britannia Popular Bread  gm",
+                    "long_desc": "Britannia Popular Bread  gm",
+                    "images": [
+                        "https://enstore.sgp1.digitaloceanspaces.com/1016/item-12120-34041a2144e796e9c8e2334f29e03ddb-Mqm2vz8N7t.jpg",
+                        "https://media.goodbox.in/sku_images/image1/britannia-popular-bread_256.jpg"
+                    ],
+                    "code": "5:BTSZ8jnEZkCueKcN"
+                },
+                "quantity": {
+                    "available": {
+                        "count": "24"
+                    },
+                    "maximum": {
+                        "count": "24"
+                    }
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "40.0",
+                    "maximum_value": "40"
+                },
+                "category_id": "Snacks & Branded Foods",
+                "fulfillment_id": "1",
+                "location_id": "L:1016:717",
+                "@ondc/org/returnable": false,
+                "@ondc/org/cancellable": true,
+                "@ondc/org/return_window": "PT3H",
+                "@ondc/org/seller_pickup_return": true,
+                "@ondc/org/time_to_ship": "PT45M",
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/contact_details_consumer_care": "DS das banaswadi new, smruti@bitsillaa.com, 3456734567",
+                "matched": true,
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "nutritional_info": "Britannia Popular Bread",
+                    "additives_info": "Britannia Popular Bread",
+                    "brand_owner_FSSAI_license_no": "21220179000863",
+                    "importer_FSSAI_license_no": "21220179000863"
+                },
+                "provider_details": {
+                    "id": "1016:717",
+                    "descriptor": {
+                        "name": "DS das banaswadi new",
+                        "symbol": "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png",
+                        "short_desc": "DS super market",
+                        "long_desc": "DS super market",
+                        "images": [
+                            "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "L:1016:717",
+                    "gps": "13.011526, 77.6459584",
+                    "address": {
+                        "street": "Banaswadi Fire Station 2J5X+33V, 157/3, 2nd C Cross Rd, HRBR Layout 1st Block, Balaji Layout",
+                        "city": "Bengaluru",
+                        "area_code": "560043",
+                        "state": "Karnataka",
+                        "locality": "Balaji Layout, Subbaiahnapalya, "
+                    },
+                    "time": {
+                        "days": "1,2,3,4,5,6,7",
+                        "range": {
+                            "start": "1200",
+                            "end": "2355",
+                            "holidays": []
+                        }
+                    },
+                    "circle": {
+                        "gps": "13.011526, 77.6459584",
+                        "radius": {
+                            "unit": "km",
+                            "value": "3000.0"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "1",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "ttl": "PT30S",
+                    "city": "std:080",
+                    "action": "on_search",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "domain": "nic2004:52110",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "country": "IND",
+                    "timestamp": "2024-02-08T05:37:22.344Z",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "core_version": "1.1.0",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "bpp_id": "biz.test.bitsila.com",
+                    "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp"
+                },
+                "bpp_details": {
+                    "name": "Bitsila",
+                    "symbol": "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png",
+                    "short_desc": "Bitsila",
+                    "long_desc": "Bitsila",
+                    "images": [
+                        "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png"
+                    ],
+                    "bpp_id": "biz.test.bitsila.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:55:00.019Z"
+            },
+            {
+                "id": "12492",
+                "descriptor": {
+                    "name": "Daily Whole Wheat Bread  gm",
+                    "symbol": "https://enstore.sgp1.digitaloceanspaces.com/1016/item-12492-2689053809ef570968679b00221db407-ITgdaxL7Su.jpg",
+                    "short_desc": "Daily Whole Wheat Bread  gm",
+                    "long_desc": "Daily Whole Wheat Bread  gm",
+                    "images": [
+                        "https://enstore.sgp1.digitaloceanspaces.com/1016/item-12492-2689053809ef570968679b00221db407-ITgdaxL7Su.jpg",
+                        "https://media.goodbox.in/qo/menu-images/Master+Grocery+Images/14-12-2017+top+downloaded+items/256x256/8906017341360.jpg"
+                    ],
+                    "code": "5:BTStBMCRxzqCtbTa"
+                },
+                "quantity": {
+                    "available": {
+                        "count": "24"
+                    },
+                    "maximum": {
+                        "count": "24"
+                    }
+                },
+                "price": {
+                    "currency": "INR",
+                    "value": "40.0",
+                    "maximum_value": "40"
+                },
+                "category_id": "Snacks & Branded Foods",
+                "fulfillment_id": "1",
+                "location_id": "L:1016:717",
+                "@ondc/org/returnable": false,
+                "@ondc/org/cancellable": true,
+                "@ondc/org/return_window": "PT3H",
+                "@ondc/org/seller_pickup_return": true,
+                "@ondc/org/time_to_ship": "PT45M",
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/contact_details_consumer_care": "DS das banaswadi new, smruti@bitsillaa.com, 3456734567",
+                "matched": true,
+                "@ondc/org/statutory_reqs_prepackaged_food": {
+                    "nutritional_info": "Daily Whole Wheat Bread",
+                    "additives_info": "Daily Whole Wheat Bread",
+                    "brand_owner_FSSAI_license_no": "11219331001186",
+                    "importer_FSSAI_license_no": "11219331001186"
+                },
+                "provider_details": {
+                    "id": "1016:717",
+                    "descriptor": {
+                        "name": "DS das banaswadi new",
+                        "symbol": "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png",
+                        "short_desc": "DS super market",
+                        "long_desc": "DS super market",
+                        "images": [
+                            "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png"
+                        ]
+                    }
+                },
+                "location_details": {
+                    "id": "L:1016:717",
+                    "gps": "13.011526, 77.6459584",
+                    "address": {
+                        "street": "Banaswadi Fire Station 2J5X+33V, 157/3, 2nd C Cross Rd, HRBR Layout 1st Block, Balaji Layout",
+                        "city": "Bengaluru",
+                        "area_code": "560043",
+                        "state": "Karnataka",
+                        "locality": "Balaji Layout, Subbaiahnapalya, "
+                    },
+                    "time": {
+                        "days": "1,2,3,4,5,6,7",
+                        "range": {
+                            "start": "1200",
+                            "end": "2355",
+                            "holidays": []
+                        }
+                    },
+                    "circle": {
+                        "gps": "13.011526, 77.6459584",
+                        "radius": {
+                            "unit": "km",
+                            "value": "3000.0"
+                        }
+                    }
+                },
+                "category_details": {},
+                "fulfillment_details": {
+                    "id": "1",
+                    "type": "Delivery"
+                },
+                "context": {
+                    "ttl": "PT30S",
+                    "city": "std:080",
+                    "action": "on_search",
+                    "bap_id": "buyer-app-preprod.ondc.org",
+                    "domain": "nic2004:52110",
+                    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                    "country": "IND",
+                    "timestamp": "2024-02-08T05:37:22.344Z",
+                    "message_id": "96abdc7f-d697-4ed9-9466-ef064d5956bc",
+                    "core_version": "1.1.0",
+                    "transaction_id": "a5ede799-9ba1-43c3-bd3e-bd2a54506ab0",
+                    "bpp_id": "biz.test.bitsila.com",
+                    "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp"
+                },
+                "bpp_details": {
+                    "name": "Bitsila",
+                    "symbol": "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png",
+                    "short_desc": "Bitsila",
+                    "long_desc": "Bitsila",
+                    "images": [
+                        "https://enstore.sgp1.cdn.digitaloceanspaces.com/00-bitsila/bitsila-logo-1512x428-t.png"
+                    ],
+                    "bpp_id": "biz.test.bitsila.com"
+                },
+                "storeOpenTillDate": "2024-02-08T23:55:00.019Z"
+            }
+        ],
+        "count": 404
+    }
+}
