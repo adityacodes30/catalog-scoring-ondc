@@ -11,6 +11,7 @@
         "message_id": "1f49b548-b0f7-471b-a4bc-190d9ec3a3e0",
         "timestamp": "2024-02-03T13:05:35.816Z",
         "ttl": "PT30S"
+       
     },
     "message": {
         "catalogs": [
@@ -36,6 +37,7 @@
                         "https://imgcdn.shortlyst.com/ondc?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0661%2F9732%2F4035%2Fproducts%2Fsoulflower-CoffeeSoap.jpg%3Fv%3D1685470435",
                         "https://imgcdn.shortlyst.com/ondc?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0661%2F9732%2F4035%2Fproducts%2FsoulflowerCoffeeSoap.jpg%3Fv%3D1685470435"
                     ]
+                  
                 },
                 "price": {
                     "currency": "INR",
