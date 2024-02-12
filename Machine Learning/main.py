@@ -8,10 +8,10 @@ Original file is located at
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-!pip install git+https://github.com/PrithivirajDamodaran/ZSIC.git
-!pip install transformers -U
-!pip install pyDecision
-!git clone https://github.com/payal15604/ONDC-Test
+# !pip install git+https://github.com/PrithivirajDamodaran/ZSIC.git
+# !pip install transformers -U
+# !pip install pyDecision
+# !git clone https://github.com/payal15604/ONDC-Test
 # %cd ONDC-Test
 
 from zero_shot_text import zero_shot_text as ztext
@@ -28,63 +28,65 @@ import json
 import requests
 
 # Define the URL of your API endpoint
-url = "http://localhost:4500/api/datasender"
+# url = "http://localhost:4500/api/datasender"
 
-def parse_json(json_data):
-    try:
-        # Convert boolean literals to uppercase
-        json_data = json_data.replace("true", "True").replace("false", "False")
-        # Parse JSON data
-        parsed_json = json.loads(json_data)
-        return parsed_json
-    except json.JSONDecodeError:
-        print("Error: Invalid JSON data")
-        return None
+# def parse_json(json_data):
+#     try:
+#         # Convert boolean literals to uppercase
+#         json_data = json_data.replace("true", "True").replace("false", "False")
+#         # Parse JSON data
+#         parsed_json = json.loads(json_data)
+#         return parsed_json
+#     except json.JSONDecodeError:
+#         print("Error: Invalid JSON data")
+#         return None
 
-try:
-    # Send a POST request to the API endpoint
-    response = requests.post(url)
+# try:
+#     # Send a POST request to the API endpoint
+#     response = requests.post(url)
 
-    # Check if the request was successful (status code 200)
-    if response.status_code == 200:
-        # Extract the JSON data from the response
-        received_data = response.text
+#     # Check if the request was successful (status code 200)
+#     if response.status_code == 200:
+#         # Extract the JSON data from the response
+#         received_data = response.text
 
-        # Parse the JSON data
-        parsed_data = parse_json(received_data)
+#         # Parse the JSON data
+#         parsed_data = parse_json(received_data)
 
-        if parsed_data:
-            # Process each received item
-            for item in parsed_data.get("Received data", []):
-                # Accessing fields from the item
-                name = item.get("name", "")
-                short_disc = item.get("short_desc", "")
-                long_disc = item.get("long_desc", "")
-                image = item.get("images", [])
-                symbol = item.get("symbol", "")
+#         if parsed_data:
+#             # Process each received item
+#             for item in parsed_data.get("Received data", []):
+#                 # Accessing fields from the item
+#                 name = item.get("name", "")
+#                 short_disc = item.get("short_desc", "")
+#                 long_disc = item.get("long_desc", "")
+#                 image = item.get("images", [])
+#                 symbol = item.get("symbol", "")
                 
-                # Example: Print the fields of each item
-                print("Name:", name)
-                print("Short Description:", short_disc)
-                print("Long Description:", long_disc)
-                print("Images:", image)
-                print("Symbol:", symbol)
+#                 # Example: Print the fields of each item
+#                 print("Name:", name)
+#                 print("Short Description:", short_disc)
+#                 print("Long Description:", long_disc)
+#                 print("Images:", image)
+#                 print("Symbol:", symbol)
 
-                # TODO: Process the fields in your ML model
+#                  Process the fields in your ML model
 
-        else:
-            print("Error: Failed to parse JSON data")
+#         else:
+#             print("Error: Failed to parse JSON data")
 
-    else:
-        # Handle the case where the request was not successful
-        print("Error: Failed to fetch data from the API. Status code:", response.status_code)
+#     else:
+#         # Handle the case where the request was not successful
+#         print("Error: Failed to fetch data from the API. Status code:", response.status_code)
 
-except Exception as e:
-    # Handle any exceptions that occur during the request
-    print("Error:", e)
+# except Exception as e:
+#     # Handle any exceptions that occur during the request
+#     print("Error:", e)
+
+
 labels = ['coffee','tea','shampoo','face serum','bread','honey','soap','biscuit','milk','chocolate','juice']
 
-result = ztext(name, labels)
+# result = ztext(name, labels)
 
 def zero_shot_text_formatted(text, labels):
   result = ztext(text, labels)
@@ -158,18 +160,16 @@ def name_image_score(name, image_list, labels):
 
     return sum(n_i_scores)/len(image_list)  #average
 
-N_Sd_score, N_Ld_score, Sd_Ld_score = name_disc_score(name, short_disc, long_disc, labels)
+# N_Sd_score, N_Ld_score, Sd_Ld_score = name_disc_score(name, short_disc, long_disc, labels)
 
-print((N_Sd_score + N_Ld_score + Sd_Ld_score)/3)
+# print((N_Sd_score + N_Ld_score + Sd_Ld_score)/3)
 
-N_S_score = name_symbol_score(name, symbol, labels)
+# N_S_score = name_symbol_score(name, symbol, labels)
 
-N_S_score = name_image_score(name, image, labels)
-print(N_S_score)
+# N_S_score = name_image_score(name, image, labels)
+# print(N_S_score)
 
 # Required Libraries
-import numpy as np
-
 from pyDecision.algorithm import topsis_method
 
 
@@ -197,9 +197,15 @@ def topsis(name, long_disc, short_disc, image, symbol,labels):
   relative_closeness = topsis_method(dataset, weights, criterion_type, graph = False, verbose = True)
   return relative_closeness
 
+name = "Saffola Honey Gold, 100% Pure NMR Tested Honey, Made with Kashmir Honey, 500g"
+symbol = "https://marico.com/html/images/favicon.png"
+short_disc = "iphone 14 sux 15 good "
+long_disc = "i need weed"
+image = ["https://images.marico.in/assets/saffola/logo.png"]
 relative_closeness=topsis(name, long_disc, short_disc, image, symbol,labels)
 print(relative_closeness)
 
 ## Call TOPSIS
-#relative_closeness = topsis_method(dataset, weights, criterion_type, graph = False, verbose = True)
+# relative_closeness = topsis_method(dataset, weights, criterion_type, graph = False, verbose = True)
 
+ 
