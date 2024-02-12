@@ -110,9 +110,9 @@ def zero_shot_image_formatted(img, labels):
 # temp_sdisc_score = zero_shot_text_formatted(short_disc, labels)
 # temp_ldisc_score = zero_shot_text_formatted(long_disc, labels)
 
-# name_sdisc_score = c_sim(temp_name_score, temp_sdisc_score, model="en_core_web_sm")
-# name_ldisc_score = c_sim(temp_name_score, temp_ldisc_score, model="en_core_web_sm")
-# name_sldisc_score = c_sim(temp_sdisc_score, temp_ldisc_score, model="en_core_web_sm")
+# name_sdisc_score = c_sim(temp_name_score, temp_sdisc_score, model="en_core_web_lg")
+# name_ldisc_score = c_sim(temp_name_score, temp_ldisc_score, model="en_core_web_lg")
+# name_sldisc_score = c_sim(temp_sdisc_score, temp_ldisc_score, model="en_core_web_lg")
 
 # print(name_sdisc_score)
 # print(name_ldisc_score)
@@ -133,9 +133,9 @@ def name_disc_score(name, short_disc, long_disc, labels):
   sd_compute = zero_shot_text_formatted(short_disc, labels)
   ld_compute = zero_shot_text_formatted(long_disc, labels)
 
-  n_sd_score = c_sim(n_compute, sd_compute, model="en_core_web_sm")
-  n_ld_score = c_sim(n_compute, ld_compute, model="en_core_web_sm")
-  sd_ld_score = c_sim(sd_compute, ld_compute, model="en_core_web_sm")
+  n_sd_score = c_sim(n_compute, sd_compute, model="en_core_web_lg")
+  n_ld_score = c_sim(n_compute, ld_compute, model="en_core_web_lg")
+  sd_ld_score = c_sim(sd_compute, ld_compute, model="en_core_web_lg")
 
   return n_sd_score, n_ld_score, sd_ld_score
 
@@ -143,7 +143,7 @@ def name_symbol_score(name, symbol, labels):
   n_compute = zero_shot_text_formatted(name, labels)
   s_compute = zero_shot_image_formatted(symbol, labels)
 
-  n_s_score = c_sim(n_compute, s_compute, model="en_core_web_sm")
+  n_s_score = c_sim(n_compute, s_compute, model="en_core_web_lg")
 
   return n_s_score
 
