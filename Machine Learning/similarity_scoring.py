@@ -9,7 +9,7 @@ Original file is located at
 
 import spacy
 
-nlp= spacy.load("en_core_web_sm")
+nlp= spacy.load("en_core_web_lg")
 
 nlp
 
@@ -21,7 +21,7 @@ g2.similarity(g1)
 
 import spacy
 
-def calculate_similarity(text1, text2, model="en_core_web_sm"):
+def calculate_similarity(text1, text2, model="en_core_web_lg"):
     # Load the spaCy model
     nlp = spacy.load(model)
 
