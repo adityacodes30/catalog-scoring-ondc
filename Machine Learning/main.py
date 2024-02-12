@@ -199,8 +199,8 @@ def topsis(name, long_disc, short_disc, image, symbol,labels):
 
 name = "Saffola Honey Gold, 100% Pure NMR Tested Honey, Made with Kashmir Honey, 500g"
 symbol = "https://marico.com/html/images/favicon.png"
-short_disc = "iphone 14 sux 15 good "
-long_disc = "i need weed"
+short_disc = "iphone 14 sux 15 good wow so funny same same but different "
+long_disc = "i need weed this is not working out good gods have mercy on us hello ondc gods pls help us "
 image = ["https://images.marico.in/assets/saffola/logo.png"]
 relative_closeness=topsis(name, long_disc, short_disc, image, symbol,labels)
 print(relative_closeness)
