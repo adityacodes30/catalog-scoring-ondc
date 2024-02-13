@@ -1,0 +1,12 @@
+spacy
+tensorflow
+transformers 
+pipeline
+NLTK
+git+https://github.com/PrithivirajDamodaran/ZSIC.git
+pyDecision
+numpy
+sentence-transformers
+scipy
+
+
