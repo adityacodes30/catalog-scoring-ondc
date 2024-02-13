@@ -20,12 +20,18 @@ from zero_shot_image import zero_shot_image as zimg
 from text_summarizer import text_summarizer as t_sum
 from similarity_scoring import calculate_similarity as c_sim
 from sbert import calculate_similarity_score as c_img
+'''
+name = "Saffola Honey Gold, 100% Pure NMR Tested Honey, Made with Kashmir Honey, 500g"
+symbol = "https://iplanet.one/cdn/shop/files/iPhone_15_Pink_PDP_Image_Position-1__en-IN_823x.jpg?v=1695427946"
+short_disc = "i need weed for my mental peace and serenity"
+long_disc = "same same but different no money no no peace no serenity iphone 14 sux"
+image = ["https://images.marico.in/assets/saffola/logo.png"]'''
 
-name='Dove Intense Repair Shampoo 1 L, Repairs Dry and Damaged Hair, Strengthening Shampoo for Smooth & Strong Hair - Mild Daily Shampoo for Men & Women'
-long_disc=" PROVIDES NOURISHMENT AND PROTECTION: Dove Daily Shine Hair shampoo for women and men needs to not only nourish but also protect from daily damager. Hair needs protection from pollution, heat, hair products, and general wear and tear. ADDS A LUSTROUS SHINE: Well-nourished and hydrated hair is healthy on the inside and shiny on the outside. Dove shampoo adds shine to normal hair. Shiny hair is usually silky and easier to style and modify. This shampoo for men and women nourishes your hair so you can have a neutral styling base. FORMULATED WITH NUTRITIVE SERUM: The nutritive serum in the Dove Daily Shine Shampoo protects your hair from frizz & humidity. It also enhances the shine and softens your hair strands for a breezy look. Dove Shampoo locks in your natural hair oils and rehydrates dry and damaged hair. STRONG AND BEAUTIFUL: Beautiful and strong hair is formed at the roots and gaged at the tips. Dove Shampoo moisturises your hair at the roots. It provides longevity & consistency for already strong and beautiful hair. This shampoo nourishes damaged hair to rebuild a stronger foundation at the roots. MILD SHAMPOO FOR EVERYDAY USE: Hair that is styled everyday also needs to be washed everyday. Washing hair with shampoo everyday helps reset them to give you a neutral canvas. Dove Daily Shine Shampoo is made with a gentle formula. So, it is safe to use it for daily hair washes. DAMAGE-FEE HAIR: Dry and damaged hair are a common occurrence in the modern world. Hence, healthy hair care routines are becoming increasingly popular. Dove shampoo and conditioner helps protect hair from damage caused by external elements. So, you can style healthy hair to your heart's content."
-short_disc="The mystery of how to get shiny hair isn't a tricky one to solve. The key to getting shiny damage free hair we all long for is making sure your hair is nourished, from the start of your routine. And the right hair shampoo is imperative to a healthy hair care routine. That's where Dove Daily Shine Shampoo comes in. Why Dove Daily Shine Shampoo? Dove Daily Shine Shampoo with Nutritive Serum builds a protective shield around the hair fiber and defends your hair from daily hair damage. It is a gentle hair shampoo that keeps your hair looking healthy and lustrous. The shampoo is mild on your scalp but gives protection from the aggression your hair faces every day. Its Nutritive Serum absorbs into the hair strands to keep them beautifully nourished and shiny, this Dove shampoo surrounds your hair with a protective shield, defending it from everyday stresses, like brushing & damage. Can I use Dove hair shampoo daily? Since 1993, Indian women have relied on Dove for beautiful skin. Now, Dove helps you pamper yourself in a new way every day, with a wide range that includes skin care, hair care and deodorants. Not only is the Dove shampoo gentle enough to use every day, over time Dove Intense Repair Shampoo makes your hair better*. So, as well as cleansing from roots up, it helps make your hair look healthy, too. The result? Beautifully shiny, strong and silky hair which is everything you want it to be. *Based on lab test with Dove Daily Shine System vs non-conditioning shampoo"
-symbol='https://m.media-amazon.com/images/I/41B2LvhvV9L._SL1000_.jpg'
-image=['https://m.media-amazon.com/images/I/61b7lpnvp2L._SL1000_.jpg','https://m.media-amazon.com/images/I/61Mo62qqVDL._SL1000_.jpg']
+# name='Dove Intense Repair Shampoo 1 L, Repairs Dry and Damaged Hair, Strengthening Shampoo for Smooth & Strong Hair - Mild Daily Shampoo for Men & Women'
+# long_disc=" PROVIDES NOURISHMENT AND PROTECTION: Dove Daily Shine Hair shampoo for women and men needs to not only nourish but also protect from daily damager. Hair needs protection from pollution, heat, hair products, and general wear and tear. ADDS A LUSTROUS SHINE: Well-nourished and hydrated hair is healthy on the inside and shiny on the outside. Dove shampoo adds shine to normal hair. Shiny hair is usually silky and easier to style and modify. This shampoo for men and women nourishes your hair so you can have a neutral styling base. FORMULATED WITH NUTRITIVE SERUM: The nutritive serum in the Dove Daily Shine Shampoo protects your hair from frizz & humidity. It also enhances the shine and softens your hair strands for a breezy look. Dove Shampoo locks in your natural hair oils and rehydrates dry and damaged hair. STRONG AND BEAUTIFUL: Beautiful and strong hair is formed at the roots and gaged at the tips. Dove Shampoo moisturises your hair at the roots. It provides longevity & consistency for already strong and beautiful hair. This shampoo nourishes damaged hair to rebuild a stronger foundation at the roots. MILD SHAMPOO FOR EVERYDAY USE: Hair that is styled everyday also needs to be washed everyday. Washing hair with shampoo everyday helps reset them to give you a neutral canvas. Dove Daily Shine Shampoo is made with a gentle formula. So, it is safe to use it for daily hair washes. DAMAGE-FEE HAIR: Dry and damaged hair are a common occurrence in the modern world. Hence, healthy hair care routines are becoming increasingly popular. Dove shampoo and conditioner helps protect hair from damage caused by external elements. So, you can style healthy hair to your heart's content."
+# short_disc="The mystery of how to get shiny hair isn't a tricky one to solve. The key to getting shiny damage free hair we all long for is making sure your hair is nourished, from the start of your routine. And the right hair shampoo is imperative to a healthy hair care routine. That's where Dove Daily Shine Shampoo comes in. Why Dove Daily Shine Shampoo? Dove Daily Shine Shampoo with Nutritive Serum builds a protective shield around the hair fiber and defends your hair from daily hair damage. It is a gentle hair shampoo that keeps your hair looking healthy and lustrous. The shampoo is mild on your scalp but gives protection from the aggression your hair faces every day. Its Nutritive Serum absorbs into the hair strands to keep them beautifully nourished and shiny, this Dove shampoo surrounds your hair with a protective shield, defending it from everyday stresses, like brushing & damage. Can I use Dove hair shampoo daily? Since 1993, Indian women have relied on Dove for beautiful skin. Now, Dove helps you pamper yourself in a new way every day, with a wide range that includes skin care, hair care and deodorants. Not only is the Dove shampoo gentle enough to use every day, over time Dove Intense Repair Shampoo makes your hair better*. So, as well as cleansing from roots up, it helps make your hair look healthy, too. The result? Beautifully shiny, strong and silky hair which is everything you want it to be. *Based on lab test with Dove Daily Shine System vs non-conditioning shampoo"
+# symbol='https://m.media-amazon.com/images/I/41B2LvhvV9L._SL1000_.jpg'
+# image=['https://m.media-amazon.com/images/I/61b7lpnvp2L._SL1000_.jpg','https://m.media-amazon.com/images/I/61Mo62qqVDL._SL1000_.jpg']
 
 import numpy as np
 
@@ -36,11 +42,9 @@ import requests
 
 # Define the URL of your API endpoint
 
-
-
 labels = ['coffee','tea','shampoo','face serum','bread','honey','soap','biscuit','milk','chocolate','juice']
 
-result = ztext(name, labels)
+# result = ztext(name, labels)
 
 def zero_shot_text_formatted(text, labels):
   result = ztext(text, labels)
@@ -89,9 +93,9 @@ def name_disc_score(name, short_disc, long_disc, labels):
   sd_compute = zero_shot_text_formatted(short_disc, labels)
   ld_compute = zero_shot_text_formatted(long_disc, labels)
 
-  n_sd_score = c_sim(n_compute, sd_compute, model="en_core_web_lg")
-  n_ld_score = c_sim(n_compute, ld_compute, model="en_core_web_lg")
-  sd_ld_score = c_sim(sd_compute, ld_compute, model="en_core_web_lg")
+  n_sd_score = c_img(n_compute, sd_compute)
+  n_ld_score = c_img(n_compute, ld_compute)
+  sd_ld_score = c_img(sd_compute, ld_compute)
 
   return n_sd_score, n_ld_score, sd_ld_score
 
@@ -114,14 +118,14 @@ def name_image_score(name, image_list, labels):
 
     return sum(n_i_scores)/len(image_list)  #average
 
-N_Sd_score, N_Ld_score, Sd_Ld_score = name_disc_score(name, short_disc, long_disc, labels)
+# N_Sd_score, N_Ld_score, Sd_Ld_score = name_disc_score(name, short_disc, long_disc, labels)
 
-print((N_Sd_score + N_Ld_score + Sd_Ld_score)/3)
+# print((N_Sd_score + N_Ld_score + Sd_Ld_score)/3)
 
-N_S_score = name_symbol_score(name, symbol, labels)
+# N_S_score = name_symbol_score(name, symbol, labels)
 
-N_S_score = name_image_score(name, image, labels)
-print(N_S_score)
+# N_S_score = name_image_score(name, image, labels)
+# print(N_S_score)
 
 # Required Libraries
 import numpy as np
@@ -135,7 +139,7 @@ def topsis(name, long_disc, short_disc, image, symbol,labels):
 
   # Weights
   #[0.3,0.25, 0.2, 0.1, 0.15]
-  weights = [0.2,0.2,0.2,0.2,0.2]  #assigned manually
+  weights = [0.2,0.2,0.3,0.15,0.15]  #assigned manually
   N_i_score = name_image_score(name, image, labels)
   N_Sd_score, N_Ld_score, Sd_Ld_score = name_disc_score(name, short_disc, long_disc, labels)
   N_S_score = name_symbol_score(name, symbol, labels)
@@ -151,10 +155,10 @@ def topsis(name, long_disc, short_disc, image, symbol,labels):
 
   # Call TOPSIS
   relative_closeness = topsis_method(dataset, weights, criterion_type, graph = False, verbose = True)
-  return relative_closeness
+  return relative_closeness[0]
 
-relative_closeness=topsis(name, long_disc, short_disc, image, symbol,labels)
-print(relative_closeness)
+# relative_closeness=topsis(name, long_disc, short_disc, image, symbol,labels)
+# print(relative_closeness)
 
 ## Call TOPSIS
 #relative_closeness = topsis_method(dataset, weights, criterion_type, graph = False, verbose = True)
