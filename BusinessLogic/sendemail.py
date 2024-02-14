@@ -23,13 +23,13 @@ def send_email(sender_email, sender_password, recipient_email, subject, message)
         server.send_message(msg)
 
 # Example usage
-sender_email = 'adityaework@gmail.com'
-sender_password = 'mnss ihdf tbdn ijbk'
-recipient_email = 'aditya.sapra4103@gmail.com'
-subject = 'Hello from Python!'
-message = 'This is a test email sent from Python.'
+# sender_email = 'adityaework@gmail.com'
+# sender_password = 'mnss ihdf tbdn ijbk'
+# recipient_email = 'aditya.sapra4103@gmail.com'
+# subject = 'Hello from Python!'
+# message = 'This is a test email sent from Python.'
 
-send_email(sender_email, sender_password, recipient_email, subject, message)
+# send_email(sender_email, sender_password, recipient_email, subject, message)
 
 def send(recipient_email ,  msg):
     sender_email = 'adityaework@gmail.com'
@@ -37,4 +37,5 @@ def send(recipient_email ,  msg):
     recipient_email = recipient_email
     subject = "Catalog Scoring results" 
     message = msg
+    send_email(sender_email, sender_password, recipient_email, subject, message)
 

@@ -28,6 +28,7 @@ catalogRouter.post("/", (req, res) => {
   
   const payload = req.body.data;
   const searchString = payload.searchString;
+  const email = payload.email;
   const context = payload.context;
   const message = payload.message;
 
@@ -35,6 +36,7 @@ catalogRouter.post("/", (req, res) => {
 
   const rawData = {
     searchString: searchString,
+    email: email,
     callback_url: callback_url,
     message: message,
   };
