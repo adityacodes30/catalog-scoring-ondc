@@ -37,6 +37,7 @@
     color: white;
     padding: 3.5vh;
     font-size: 1.5rem;
+    text-align: center;
   }
   .text-2
   {
@@ -44,6 +45,7 @@
     color: white;
     padding: 3.5vh;
     font-size: 1.5rem;
+    text-align: center;
   }
   .text-3
   {
@@ -51,4 +53,5 @@
     color: white;
     padding:3.5vh;
     font-size: 1.5rem;
+    text-align: center;
   }
