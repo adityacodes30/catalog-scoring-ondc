@@ -20,7 +20,7 @@ def main():
         data , ts = processloop(json_str)
         email = json_str["email"]
         embody = f"Your request has been processed. Please check the catalog for the updated scores.
-        \nTotal score is {ts}\nData is as follows:\n{data}"
+        \n Overall catalog score is {round(ts,2)*100} \n Data is as follows: \n {data}"
         send(email, embody)
 
         connectionToNotifQ = pika.BlockingConnection(pika.ConnectionParameters('localhost', 9090 ))
