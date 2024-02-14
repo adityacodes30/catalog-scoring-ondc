@@ -1,80 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
-body
-{
+body {
   margin: 0;
   padding: 0;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.navb{
-  width: 100vw;
-  height:11.5vh;
-  background-color: white; 
-  border-radius: 12px; 
+.navb {
+  width: 100%;
+  height: 11.5vh;
+  background-color: white;
+  border-radius: 12px;
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.8);
 }
 
-.navb-text
-{
-  color: #4385F5;
+.navb-text {
+  color: #4385f5;
   font-size: 2.0rem;
   font-weight: bold;
   text-align: center;
   justify-content: center;
-  font-family: Jura, sans-serif;
+  font-family: 'Jura', sans-serif;
   border-color: black;
   padding: 2vh;
 }
 
-.hero-sec
-{
-  margin:5vh;
+.hero-sec {
+  margin: 5vh;
   padding: 5vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  row-gap: 2vw;
-  
-}
-
-.sec-1
-{
-  width: 40vw;
-  height: 50vh;
-  background-color: #D9D9D9;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  gap:1.2vh;
+  gap: 2vw;
 }
 
-.email-001
-{
+.sec-1,
+.sec-2 {
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+.email-001 {
   text-align: center;
-  color:#3C3C3C;
+  color: #3c3c3c;
   padding: 5vh;
   font-size: 2.0rem;
-  font-family: Jura;
+  font-family: 'Jura', sans-serif;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Jura;
+  font-family: 'Jura', sans-serif;
 }
 
 input[type="email"] {
-  flex: 2;
+  display: flex;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-left: 7vw;
-  font-family: Jura;
-  width: 25vw;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  font-family: 'Jura', sans-serif;
+  max-width: 80%;
 }
 
 button[type="submit"] {
@@ -84,25 +73,16 @@ button[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: Jura;
+  font-family: 'Jura', sans-serif;
 }
 
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-.sec-2
-{
-  width: 40vw;
-  height:50vh;
-  background-color: #D9D9D9;
-  border-radius: 5px;
-}
-
-.head-001
-{
-  font-family: Jura;
-  color: #3C3C3C;
+.head-001 {
+  font-family: 'Jura', sans-serif;
+  color: #3c3c3c;
   font-size: 2.0rem;
   text-align: center;
   margin: 3vh;
@@ -112,14 +92,12 @@ button[type="submit"]:hover {
 .head-001::after {
   content: '';
   display: block;
-  width: 16vw;
+  width: 30%;
   height: 1.2vh;
-  background-color: #4385F5; 
+  background-color: #4385f5;
   position: absolute;
-  bottom: -10px; 
-  left: 40%;
-  align-items: center;
-  justify-content: center;
+  bottom: -10px;
+  left: 35%;
   border-radius: 2px;
 }
 
@@ -128,8 +106,8 @@ button[type="submit"]:hover {
   display: block;
   font-weight: bold;
   position: absolute;
-  bottom: -16px; 
-  left: 58%;
+  bottom: -16px;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -137,10 +115,9 @@ button[type="submit"]:hover {
   display: block;
   margin: 0 auto;
   text-align: center;
-  padding: 10px; 
+  padding: 10px;
   border-radius: 4px;
 }
-
 
 .sendRequesto:hover {
   background-color: green;
@@ -152,20 +129,94 @@ button[type="submit"]:hover {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #4385F5;
+  background-color: #4385f5;
   color: white;
-  font-family: Jura, sans-serif;
+  font-family: 'Jura', sans-serif;
   font-size: 1.5rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   height: 11vh;
 }
-.catalog-button.selected
-{
-  border: 2px solid black ;
+
+.catalog-button.selected {
+  border: 2px solid black;
 }
 
 .catalog-button:hover {
   background-color: #2f5bb7;
+}
+
+.wrap-1 {
+  margin-top: 20px;
+}
+
+.item-details {
+  font-family: 'Jura', sans-serif;
+  color: #3c3c3c;
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+
+.item-details h2 {
+  margin-bottom: 10px;
+}
+
+.item-details pre {
+  white-space: pre-wrap;
+  font-size: 14px; /* Adjust font size as needed */
+  max-width: 100%; /* Ensure the JSON data does not overflow horizontally */
+  overflow-x: hidden; /* Add horizontal scrollbar if needed */
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (min-width: 768px) {
+  .hero-sec {
+    flex-direction: row;
+  }
+
+  .sec-1,
+  .sec-2 {
+    width: 40%;
+  }
+
+  .email-001 {
+    padding: 2vh;
+  }
+
+  input[type="email"] {
+    width: 85%;
+    max-width: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .item-details {
+    font-family: 'Jura', sans-serif;
+    color: #3c3c3c;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    overflow: auto; 
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-sec {
+    gap: 3vw;
+  }
+
+  .sec-1,
+  .sec-2 {
+    width: 45%;
+  }
+
+  .item-details {
+    padding: 30px;
+  }
 }
