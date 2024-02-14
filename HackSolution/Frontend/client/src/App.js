@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import catalogItems from './items.js';
-import ResultCard from './components/ResultCard.js';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import catalogItems from "./items.js";
+import ResultCard from "./components/ResultCard.js";
+import axios from "axios";
 
 const App = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [itemDetails, setItemDetails] = useState(null);
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -16,8 +16,11 @@ const App = () => {
       import(`./TestData/${selectedItem}.json`)
         .then((module) => {
           const data = module.default;
-          console.log(data);
+          //  const item_data= JSON.parse(data);
+
+          console.log(typeof data);
           setItemDetails(data);
+          console.log(data.message.catalogs);
           setIsLoading(false);
         })
         .catch((error) => {
@@ -38,16 +41,29 @@ const App = () => {
   const sendRequest = () => {
     if (itemDetails && email && selectedItem) {
       const requestData = {
-        itemDetails: itemDetails,
-        email: email
+        data: {
+          searchstring: selectedItem,
+          email: email,
+          context: itemDetails.context,
+          message: itemDetails.message,
+        },
       };
+      console.log(JSON.stringify(requestData));
+      // JSON.stringify(requestData);
 
-      axios.post('http://localhost:4500/api/datasender', requestData)
-        .then(response => {
-          console.log('Data sent successfully!', response.data);
+      fetch("http://localhost:4500/api/datasender", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestData),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Data sent successfully!", data);
         })
-        .catch(error => {
-          console.error('Error sending request:', error);
+        .catch((error) => {
+          console.error("Error sending request:", error);
         });
     }
   };
@@ -63,7 +79,9 @@ const App = () => {
           {catalogItems.map((item, index) => (
             <button
               key={index}
-              className={`catalog-button ${item === selectedItem ? 'selected' : ''}`}
+              className={`catalog-button ${
+                item === selectedItem ? "selected" : ""
+              }`}
               onClick={() => handleItemClick(item)}
             >
               {item}
@@ -71,7 +89,7 @@ const App = () => {
           ))}
         </div>
         <div className="sec-2">
-          <p className='email-001'>Enter your E-mail to get catalog score</p>
+          <p className="email-001">Enter your E-mail to get catalog score</p>
           <input
             type="email"
             value={email}
@@ -82,23 +100,27 @@ const App = () => {
         </div>
       </div>
 
-      <button className="sendRequesto" onClick={sendRequest} disabled={!email || !selectedItem}>SEND REQUEST</button>
+      <button
+        className="sendRequesto"
+        onClick={sendRequest}
+        disabled={!email || !selectedItem}
+      >
+        SEND REQUEST
+      </button>
 
       <div className="wrap-1">
         <div className="head-001">REAL-TIME EVALUATION</div>
-        <div className='r-card'>
+        <div className="r-card">
           {isLoading ? (
             <p>Loading...</p>
+          ) : selectedItem && itemDetails ? (
+            <div>
+              <h2>Selected Item: {selectedItem}</h2>
+              <p>Item Details:</p>
+              <pre>{JSON.stringify(itemDetails, null, 2)}</pre>
+            </div>
           ) : (
-            selectedItem && itemDetails ? (
-              <div>
-                <h2>Selected Item: {selectedItem}</h2>
-                <p>Item Details:</p>
-                <pre>{JSON.stringify(itemDetails, null, 2)}</pre>
-              </div>
-            ) : (
-              <ResultCard />
-            )
+            <ResultCard />
           )}
         </div>
       </div>
