@@ -112,7 +112,7 @@ const App = () => {
       </button>
 
       <div className="wrap-1">
-        <div className="head-001">REAL-TIME EVALUATION</div>
+        <div className="head-001">JSON DATA SENT TO THE SERVER</div>
         <div className="r-card">
           {isLoading ? (
             <p>Loading...</p>
