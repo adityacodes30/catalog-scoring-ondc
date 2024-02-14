@@ -1,5 +1,5 @@
 const catalogItems = [
-    'tea',
+  
     'bread',
     'soap',
      'honey',
