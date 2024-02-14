@@ -5,10 +5,7 @@ const catalogItems = [
      'honey',
     // 'search_deodrants',
     'shampoo',
-    'conditioner',
-    'toothpaste',
-    'toothbrush',
-  ];
+];
   
   export default catalogItems;
   
