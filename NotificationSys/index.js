@@ -35,14 +35,14 @@ amqp.connect("amqp://localhost:9090", function (error0, connection) {
 
 const url = "https://example.com/notification"; // Replace with the desired URL
 
-// Make a POST request to the specified URL
-// axios
-//   .post(url, req.body)
-//   .then((response) => {
-//     console.log("Notification sent successfully");
-//     res.status(200).send("Notification sent successfully");
-//   })
-//   .catch((error) => {
-//     console.error("Error sending notification:", error);
-//     res.status(500).send("Error sending notification");
-//   });
+Make a POST request to the specified URL
+axios
+  .post(url, req.body)
+  .then((response) => {
+    console.log("Notification sent successfully");
+    res.status(200).send("Notification sent successfully");
+  })
+  .catch((error) => {
+    console.error("Error sending notification:", error);
+    res.status(500).send("Error sending notification");
+  });

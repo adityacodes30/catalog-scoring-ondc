@@ -1,8 +1,10 @@
 import express from 'express';
 import catalogRouter from './routes/catalog.js';
 const app = express();
+import cors from 'cors';
 
 app.use(express.json());
+app.use(cors());
 
 app.use('/catalog', catalogRouter);
 

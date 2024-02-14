@@ -38,11 +38,11 @@ const App = () => {
     setEmail(event.target.value);
   };
 
-  const sendRequest = () => {
+  const sendRequest = async () => {
     if (itemDetails && email && selectedItem) {
       const requestData = {
         data: {
-          searchstring: selectedItem,
+          searchString: selectedItem,  // changed 'searchstring' to 'searchString'
           email: email,
           context: itemDetails.context,
           message: itemDetails.message,
@@ -51,17 +51,19 @@ const App = () => {
       console.log(JSON.stringify(requestData));
       // JSON.stringify(requestData);
 
-      fetch("http://localhost:4500/api/datasender", {
+      fetch("http://localhost:5008/catalog", {
+      
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
         },
-        body: JSON.stringify(requestData),
+        body: await JSON.stringify(requestData),
       })
         .then((response) => response.json())
         .then((data) => {
           console.log("Data sent successfully!", data);
-          alert("you will receive an email shortly ---")
+          alert("you will receive an email shortly ")
         })
         .catch((error) => {
           console.error("Error sending request:", error);
