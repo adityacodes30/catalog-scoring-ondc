@@ -61,6 +61,7 @@ const App = () => {
         .then((response) => response.json())
         .then((data) => {
           console.log("Data sent successfully!", data);
+          alert("you will receive an email shortly ---")
         })
         .catch((error) => {
           console.error("Error sending request:", error);
