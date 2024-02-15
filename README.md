@@ -22,7 +22,7 @@ the catalog score for each item and catalog overall. Since its category agnostic
 
 ##### Architecture
 
-<image src="./misc/image2.png">
+<image src="./misc/image.png">
 
 ##### Scoring algorithm
 
