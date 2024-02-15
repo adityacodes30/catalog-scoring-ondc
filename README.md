@@ -30,9 +30,9 @@ the catalog score for each item and catalog overall. Since its category agnostic
 
 <h3><a href="http://35.239.81.224/ ">DEPLOYED LINK - http://35.239.81.224/</a></h3>
 
-<li>
-<ul>Core api at 5008</ul>
-<ul>Queue 1 at port 8080 , Management console at 8081 </ul>
-<ul>Queue 2 at port 9090 , Management console at 9091 <ul>
-<ul>Python process is run via pm2 in deployment<ul>
-</li>
+<ul>
+<li>Core api at 5008</li>
+<li>Queue 1 at port 8080 , Management console at 8081 </li>
+<li>Queue 2 at port 9090 , Management console at 9091 <li>
+<li>Python process is run via pm2 in deployment<li>
+</ul>
