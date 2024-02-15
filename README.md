@@ -28,7 +28,15 @@ the catalog score for each item and catalog overall. Since its category agnostic
 
 <image src="./misc/ai.png">
 
+##### Helpful Links
+
 <h3><a href="http://35.239.81.224/ ">DEPLOYED LINK - http://35.239.81.224/</a></h3>
+
+<h3> <h3>
+<h3><a href="https://youtu.be/dMvwqbL9Ni0"> Explainer video youtube link</a></h3>
+
+
+<h3><a href="https://drive.google.com/file/d/1dcE6KkFC2SANAzQ3dCMaVpFYqdQWD4fR/view?usp=sharing">Explainer/Submission PDF</a></h3>
 
 <ul>
 <li>Core api at 5008</li>
