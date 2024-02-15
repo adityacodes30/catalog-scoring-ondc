@@ -33,6 +33,6 @@ the catalog score for each item and catalog overall. Since its category agnostic
 <ul>
 <li>Core api at 5008</li>
 <li>Queue 1 at port 8080 , Management console at 8081 </li>
-<li>Queue 2 at port 9090 , Management console at 9091 <li>
-<li>Python process is run via pm2 in deployment<li>
+<li>Queue 2 at port 9090 , Management console at 9091 </li>
+<li>Python process is run via pm2 in deployment</li>
 </ul>
