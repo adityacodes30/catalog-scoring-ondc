@@ -8,7 +8,7 @@
 <li>Krishna Vig </li>
 <ul> 
 
-<h3><a href="http://35.239.81.224/ ">DEPLOYED LINK - http://35.239.81.224/</a></h3>
+<h3><a href="https://youtu.be/dMvwqbL9Ni0"> Explainer video youtube link</a></h3>
 
 ### OVERVIEW 
 
@@ -34,7 +34,7 @@ the catalog score for each item and catalog overall. Since its category agnostic
 <p>Note : No longer deployed due to exhaustion of cloud credits</p>
 
 <h3> <h3>
-<h3><a href="https://youtu.be/dMvwqbL9Ni0"> Explainer video youtube link</a></h3>
+
 
 
 <h3><a href="https://drive.google.com/file/d/1dcE6KkFC2SANAzQ3dCMaVpFYqdQWD4fR/view?usp=sharing">Explainer/Submission PDF</a></h3>
